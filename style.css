@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: solid 1px; */
+    
+}
+
+header {
+    background-color: #031926;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+body {
+    background-color: #F4E9CD ;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 70vw;
+    background-color: #468189;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+.todo-input {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    justify-self: start;
+}
+
+#plus {
+    width: 30px;
+    background-color: #F4E9CD;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+
+#plus:hover {
+    background-color: #9DBEBB;
+}
+
+#enter {
+    height: 30px;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+#check {
+    width: 25px;  
+}
+
+#check input:checked {
+    background-color: black;
+}
+
+p {
+    color: #F4E9CD;
+    font-weight: 400;
+    align-self: center;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#edit {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F4E9CD;
+}
+
+#delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F4E9CD;
+}
+
+#edit:hover {
+    background-color: #9DBEBB;
+}
+
+#delete:hover {
+    background-color: #9DBEBB;
+}
+
+
+.beide-button {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#save {
+    width: 100px;
+    height: 30px;
+    background-color: #F4E9CD;
+    border: none;
+    border-radius: 30px;
+    color: #468189;
+    font-weight: bold;
+}
+
+#save:hover {
+    background-color: #9DBEBB ;
+}
+
+#delete-all {
+    width: 100px;
+    height: 30px;
+    background-color: #F4E9CD;
+    border: none;
+    border-radius: 30px;
+    color: #468189;
+    font-weight: bold;
+}
+
+#delete-all:hover {
+    background-color: #9DBEBB ;
+}
+
+i {
+    color: #468189;
+}
+
+
+
