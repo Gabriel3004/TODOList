@@ -7,16 +7,29 @@
     
 }
 
+.update-buttons {
+    display: none;
+}
+
 header {
-    background-color: #031926;
+    background-color: #468189;
     color: white;
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 0px 0px 100px 100px;
+}
+
+#headerIcon {
+    color: white; 
+    margin-left: 15px;
+    font-size: 30px;
+    height: 30px;
 }
 
 body {
-    background-color: #F4E9CD ;
+    background-color: #031926 ;
 }
 
 main {
@@ -26,7 +39,6 @@ main {
 
 .container {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     width: 70vw;
     background-color: #468189;
@@ -38,14 +50,16 @@ main {
 .todo-input {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-self: start;
 }
 
 #plus {
-    width: 30px;
+    width: 40px;
     background-color: #F4E9CD;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 30px 30px 0px;
     border: none;
 }
 
@@ -54,36 +68,37 @@ main {
 }
 
 #enter {
-    height: 30px;
-    border-radius: 15px 0px 0px 15px;
+    height: 40px;
+    border-radius: 30px 0px 0px 30px;
     border: none;
+    width: 450px;
 }
 
-input::placeholder {
-    padding-left: 10px;
+input {
+    padding-left: 15px
 }
 
-#check {
+.checkedDone {
     width: 25px;  
-}
-
-#check input:checked {
-    background-color: black;
+    accent-color: #F4E9CD;
 }
 
 p {
     color: #F4E9CD;
     font-weight: 400;
     align-self: center;
+    width: 400px;
+    word-wrap: break-word;
 }
 
 .tasks {
     display: flex;
     justify-content: space-around;
     padding: 30px;
+    border-top: 1px solid #F4E9CD;
 }
 
-#edit {
+.edit {
     width: 30px;
     height: 30px;
     border-radius: 5px;
@@ -91,7 +106,7 @@ p {
     background-color: #F4E9CD;
 }
 
-#delete {
+.delete {
     width: 30px;
     height: 30px;
     border-radius: 5px;
@@ -99,11 +114,11 @@ p {
     background-color: #F4E9CD;
 }
 
-#edit:hover {
+.edit:hover {
     background-color: #9DBEBB;
 }
 
-#delete:hover {
+.delete:hover {
     background-color: #9DBEBB;
 }
 
@@ -128,7 +143,7 @@ p {
     background-color: #9DBEBB ;
 }
 
-#delete-all {
+#cancel {
     width: 100px;
     height: 30px;
     background-color: #F4E9CD;
@@ -138,7 +153,7 @@ p {
     font-weight: bold;
 }
 
-#delete-all:hover {
+#cancel:hover {
     background-color: #9DBEBB ;
 }
 
@@ -146,5 +161,47 @@ i {
     color: #468189;
 }
 
+textarea:disabled {
+    resize: none;
+    background-color: #468189;
+    border: none;
+    color: #F4E9CD;
+    font-size: 20px;
+    font-weight: bold;
+    width: 600px;
+    height: 30px;
+    vertical-align: middle;
+}
 
+textarea {
+    resize: none;
+    width: 600px;
+}
+
+
+
+
+#clear {
+    display: none;
+    border: none;
+    background-color: #F4E9CD;
+    border-radius: 0px 0px 15px 15px;
+    color: #468189;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#clear:hover {
+    background-color: #9DBEBB;
+}
+
+#message{
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: -15px;
+    font-size: 16px;
+}
 
