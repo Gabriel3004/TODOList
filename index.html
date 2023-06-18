@@ -11,6 +11,7 @@
 <body>
     <header>
         <h1>TODO LIST</h1>
+        <i id="headerIcon" class="fa fa-th-list"></i>
     </header>   
     <main>
         <div class="container">
@@ -18,18 +19,18 @@
                 <input id="enter" type="text" placeholder="Type Task...">               
                     <button id="plus">
                         <i class="fa fa-plus"></i>
-                    </button> 
+                    </button>    
             </div>
-            <div class="tasks">
-                <input id="check" type="checkbox">
-                <p>Super tasks</p>
-                <button id="edit"><i class="fa fa-pencil"></i></button>
-                <button id="delete"><i class="fa fa-trash"></i></button>
+            <div >
+                <p id="message">You need to write something in the input!</p>
             </div>
-            <div class="beide-button">
-                <button id="save">Save</button>
-                <button id="delete-all">Delete All</button>
+            <div class="tasksInput">
+                
             </div>
+            <button id="clear">
+                Clear All
+            </button>
+            
         </div>     
     </main>
     <script src="script.js" ></script>
