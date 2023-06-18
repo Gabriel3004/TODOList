@@ -93,6 +93,7 @@ p {
 
 .tasks {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 30px;
     border-top: 1px solid #F4E9CD;
@@ -168,18 +169,18 @@ textarea:disabled {
     color: #F4E9CD;
     font-size: 20px;
     font-weight: bold;
-    width: 600px;
+    min-width: 500px;
     height: 30px;
     vertical-align: middle;
 }
 
 textarea {
     resize: none;
-    width: 600px;
+    min-width: 500px;
+    border-radius: 30px;
+    border: 3px solid #9DBEBB;
+    text-align: center;
 }
-
-
-
 
 #clear {
     display: none;
@@ -205,3 +206,47 @@ textarea {
     font-size: 16px;
 }
 
+@media only screen and (max-width: 960px) {
+    .tasks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .update-buttons {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .edit-buttons {
+        padding: 10px 10px 0px 10px;
+    }
+    
+    textarea {
+        min-width: 220px;
+        text-align: center;
+    }
+
+    textarea:disabled {
+        min-width: 220px;
+    }
+
+    .checkedDone {
+        margin-bottom: 15px;
+    }
+
+    .edit {
+        margin-right: 40px;
+    }
+
+    #save {
+        margin-right: 5px;
+    }
+
+    #message {
+        padding: 10px;
+    }
+
+
+  }
